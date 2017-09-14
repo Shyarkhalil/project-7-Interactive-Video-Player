@@ -1,0 +1,163 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.transcript {
+  margin: 0 auto;
+  width: 85%;
+}
+
+
+ p span {
+   line-height: 1.7em;
+   font-size: 1em;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 500;
+ }
+
+
+ .textColor {
+   background-color: yellow;
+ }
+
+
+.flyText li{
+  display: none;
+}
+
+ul {
+  display: none;
+}
+
+.vidDiv {
+  margin-top: 0;
+}
+
+
+/*********************
+  Video controls style
+***********************/
+
+
+
+/*****Controls background style*****/
+.mejs__controls:not([style*='display: none']) {
+    background: rgba(39, 48, 51, 0.91);
+}
+
+/******Progress bar style****/
+.mejs__time-current,
+.mejs__time-handle-content {
+    background: rgb(68, 210, 198);
+    border-radius: 20px;
+}
+
+.mejs__time-loaded {
+  background-color: rgb(25, 26, 27);
+}
+
+
+/*****Speed button style*****/
+.mejs__speed-button>button, .mejs__speed-selector-label {
+  color: rgb(68, 210, 198);
+}
+
+/*****Volume style*****/
+.mejs__volume-handle, .mejs__volume-current {
+  background-color: rgb(68, 210, 198);
+}
+
+
+/*****Time style****/
+
+.mejs__time {
+   color: rgb(68, 210, 198);
+}
+
+/*****Skipback style****/
+.mejs__skip-back-button>button {
+  color: rgb(68, 210, 198);
+}
+
+
+
+/****************************************
+      Media Querries
+****************************************/
+
+
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .vidDiv {
+    margin-top: 300px;
+  }
+
+  .transcript {
+    width: 100%;
+  }
+  p span {
+    line-height: 3rem;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+  }
+
+  /****************************************
+        Text Animation
+  ****************************************/
+
+  .vLetter{
+    margin-left: 20px;
+  }
+
+  ul {
+    display: inherit;
+  }
+
+  .flyText {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    transform: translateX(-50%) translateY(-50%);
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+
+  .flyText li {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight:500;
+    font-size: 3.7em;
+    color: #05374d;
+    opacity: 1;
+    transition: all 1.5s ease;
+    font-family: 'Faster One', cursive;
+  }
+
+  .hidden li {
+    opacity: 0;
+  }
+
+  .hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+  .hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+  .hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+  .hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+  .hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+  .hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+  .hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+  .hidden li:nth-child(8) { transform: translateX(60px) translateY(-200px); }
+  .hidden li:nth-child(9) { transform: translateX(50px) translateY(-100px); }
+  .hidden li:nth-child(10) { transform: translateX(-20px) translateY(-80px); }
+  .hidden li:nth-child(11) { transform: translateX(-40px) translateY(-200px); }
+
+}
