@@ -114,10 +114,10 @@ ul {
         Text Animation
   ****************************************/
 
-  .vLetter{
-    margin-left: 20px;
-  }
 
+.Pletter {
+  margin-left: 20px;
+}
   ul {
     display: inherit;
   }
@@ -126,10 +126,12 @@ ul {
     list-style: none;
     position: absolute;
     left: 50%;
-    top: 13%;
+    top: 12%;
     transform: translateX(-50%) translateY(-50%);
     margin-bottom: 0;
     padding: 0;
+    width: 100%;
+    text-align: center;
   }
 
 
