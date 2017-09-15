@@ -10,7 +10,7 @@ video.addEventListener('timeupdate', (e) => {
     let currentTime = video.currentTime;
     let startTime = captions[i].getAttribute('data-start');
     let endTime = captions[i].getAttribute('data-end');
-    if (startTime <= currentTime && endTime >= currentTime) {
+    if (startTime <= currentTime && endTime > currentTime) {
        captions[i].className = 'textColor';
     } else {
       captions[i].className = '';
